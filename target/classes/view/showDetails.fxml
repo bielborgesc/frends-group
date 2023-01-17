@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowDetailsController">
+   <children>
+      <Label layoutX="26.0" layoutY="22.0" text="Endereço" />
+      <Label layoutX="19.0" layoutY="55.0" text="Rua:" />
+      <Label layoutX="16.0" layoutY="137.0" text="Bairro:" />
+      <Label layoutX="22.0" layoutY="97.0" text="N°:" />
+      <Label layoutX="13.0" layoutY="180.0" text="Cidade:" />
+      <TextField fx:id="txtRua" layoutX="62.0" layoutY="51.0" prefHeight="25.0" prefWidth="231.0" />
+      <TextField fx:id="TxtBairro" layoutX="62.0" layoutY="133.0" prefHeight="25.0" prefWidth="219.0" />
+      <TextField fx:id="txtNum" layoutX="62.0" layoutY="93.0" prefHeight="25.0" prefWidth="56.0" />
+      <TextField fx:id="txtCidade" layoutX="62.0" layoutY="176.0" prefHeight="25.0" prefWidth="219.0" />
+      <Text layoutX="22.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações" />
+      <Label layoutX="16.0" layoutY="264.0" text="Nome:" />
+      <Label layoutX="10.0" layoutY="335.0" text="Data Nascimento:" />
+      <Label layoutX="18.0" layoutY="299.0" text="Sexo:" />
+      <TextField fx:id="txtNome" layoutX="58.0" layoutY="260.0" prefHeight="25.0" prefWidth="219.0" />
+      <ChoiceBox fx:id="choiceSsexo" layoutX="58.0" layoutY="295.0" prefHeight="25.0" prefWidth="138.0" />
+      <DatePicker fx:id="dateNasc" layoutX="114.0" layoutY="331.0" prefHeight="25.0" prefWidth="164.0" />
+      <Label layoutX="12.0" layoutY="374.0" text="Ele é seu amigo ou colega?" />
+      <Button layoutX="209.0" layoutY="523.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="84.0" onAction="#handleClickButtonSave" text="Salvar" />
+      <RadioButton fx:id="rdoAmigo" layoutX="15.0" layoutY="405.0" mnemonicParsing="false" selected="true" text="Amigo">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rdoColega" layoutX="122.0" layoutY="405.0" mnemonicParsing="false" text="Colega" toggleGroup="$group" />
+      <Label layoutX="12.0" layoutY="461.0" text="Coisa Favorita" />
+      <TextField fx:id="txtFav" layoutX="93.0" layoutY="457.0" prefHeight="25.0" prefWidth="199.0" />
+   </children>
+</AnchorPane>

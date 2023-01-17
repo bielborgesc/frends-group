@@ -1,0 +1,3 @@
+ -> A criação de banco de dados está funciona juntamente com as classes DAO.
+ -> A interface gráfica foi gerada, ela abre, tem ligações a estrutura MVC, porém não consegui implementar a regra de negócio.
+ -> A unica coisa que está funcionando na interface gráfica é a atualização do nome do grupo.
